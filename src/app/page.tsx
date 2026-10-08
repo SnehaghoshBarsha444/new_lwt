@@ -3,6 +3,7 @@ import { Hero } from "@/components/hero/Hero";
 import { WorkplaceStoryline } from "@/components/sections/WorkplaceStoryline";
 import { AIWorkforceSection } from "@/components/sections/AIWorkforceSection";
 import { VerificationStamp } from "@/components/sections/VerificationStamp";
+import { PricingSection } from "@/components/sections/PricingSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { Footer } from "@/components/footer/Footer";
 
@@ -15,6 +16,7 @@ export default function HomePage() {
         <WorkplaceStoryline />
         <AIWorkforceSection />
         <VerificationStamp />
+        <PricingSection />
         <CTASection />
       </main>
       <Footer />

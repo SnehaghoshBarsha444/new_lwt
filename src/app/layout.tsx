@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { MouseSpotlight } from "@/components/effects/MouseSpotlight";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-saas-canvas bg-tech-grid min-h-screen text-[#0A0F2B] antialiased selection:bg-[#CBB4FF] selection:text-[#0A0F2B]">
+      <body className="bg-saas-canvas bg-tech-grid min-h-screen text-[#0A0F2B] antialiased selection:bg-[#CBB4FF] selection:text-[#0A0F2B] relative">
+        {/* Subtle Ambient Cursor Spotlight */}
+        <MouseSpotlight />
+        
+        {/* Page Content */}
         {children}
       </body>
     </html>
