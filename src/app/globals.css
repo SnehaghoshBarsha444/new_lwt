@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --deep-navy: #0A0F2B;
+    --royal-blue: #153EC1;
+    --tech-blue: #287BEB;
+    --cyan-blue: #2ED2EF;
+    --lavender: #8E7CF6;
+    --purple: #7B3ED6;
+    --soft-lilac: #CBB4FF;
+    --soft-white: #F5F7FE;
+    --pure-white: #FFFFFF;
+  }
+
+  body {
+    background-color: var(--soft-white);
+    color: var(--deep-navy);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-editorial {
+  font-family: 'Newsreader', serif;
+  letter-spacing: -0.02em;
+}
+
+/* Ambient Clean Glow (Zero Leaves) */
+.bg-ambient-clean {
+  background-color: #F5F7FE;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(203, 180, 255, 0.45) 0%, transparent 60%),
+    radial-gradient(circle at 10% 35%, rgba(46, 210, 239, 0.15) 0%, transparent 45%),
+    radial-gradient(circle at 90% 65%, rgba(142, 124, 246, 0.18) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 90%, rgba(21, 62, 193, 0.12) 0%, transparent 65%);
+}
+
+/* Handshake Clasp Animations */
+@keyframes hand-clasp-left {
+  0%, 100% { transform: translateX(0px); }
+  50% { transform: translateX(8px); }
+}
+
+@keyframes hand-clasp-right {
+  0%, 100% { transform: translateX(0px); }
+  50% { transform: translateX(-8px); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+@keyframes scan-beam {
+  0% { top: 0%; opacity: 0; }
+  50% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+@keyframes float-smooth {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.anim-hand-left {
+  animation: hand-clasp-left 3s ease-in-out infinite;
+}
+
+.anim-hand-right {
+  animation: hand-clasp-right 3s ease-in-out infinite;
+}
+
+.anim-pulse-ring {
+  animation: pulse-ring 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.anim-scan {
+  animation: scan-beam 3s ease-in-out infinite;
+}
+
+.anim-float {
+  animation: float-smooth 4s ease-in-out infinite;
+}
+
+/* Elevated Clean Cards */
+.saas-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(203, 180, 255, 0.55);
+  box-shadow: 0 20px 45px -15px rgba(10, 15, 43, 0.06), 0 0 0 1px rgba(255, 255, 255, 0.8) inset;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.saas-card:hover {
+  border-color: #8E7CF6;
+  box-shadow: 0 30px 60px -15px rgba(21, 62, 193, 0.12);
+  transform: translateY(-3px);
+}
