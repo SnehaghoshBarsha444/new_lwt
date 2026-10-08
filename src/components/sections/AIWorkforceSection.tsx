@@ -1,7 +1,7 @@
 export function AIWorkforceSection() {
   return (
-    <section id="team" className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-      {/* Vestris Italic Heading */}
+    <section id="team" className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 py-24">
+      {/* Heading */}
       <div className="text-center mb-16">
         <h2 className="text-4xl sm:text-6xl font-vestris font-normal text-[#0A0F2B]">
           Never turn down <br />
@@ -15,8 +15,15 @@ export function AIWorkforceSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Card 1: Code Review */}
-        <div className="rounded-3xl p-7 bg-white border border-[#CBB4FF]/60 shadow-xs flex flex-col justify-between hover:border-[#8E7CF6] transition-all">
+        <div className="rounded-3xl p-7 bg-white border border-[#CBB4FF]/60 shadow-xs flex flex-col justify-between hover:border-[#8E7CF6] hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
           <div>
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-[10px] font-mono font-bold px-2.5 py-0.5 rounded-full bg-[#153EC1]/10 text-[#153EC1]">
+                STAFF ARCHITECTURE
+              </span>
+              <span className="w-2 h-2 rounded-full bg-[#2ED2EF] animate-pulse" />
+            </div>
+
             <h3 className="font-bold text-base text-[#0A0F2B] mb-1">
               Automated code reviews with strict gates
             </h3>
@@ -28,7 +35,7 @@ export function AIWorkforceSection() {
             <div className="p-3.5 rounded-xl bg-[#F5F7FE] border border-[#CBB4FF]/50 text-[11px] font-mono text-[#0A0F2B] space-y-1 mb-6">
               <div className="flex items-center justify-between text-[#7B3ED6] font-bold mb-1">
                 <span>PR #402 // AST AUDIT</span>
-                <span>REJECTED</span>
+                <span className="text-red-500 font-bold">REJECTED</span>
               </div>
               <p className="text-[#535D80]">Line 24: Unhandled Promise rejection.</p>
               <p className="text-[#153EC1] font-semibold">&gt; Please wrap in try/catch block.</p>
@@ -41,8 +48,15 @@ export function AIWorkforceSection() {
         </div>
 
         {/* Card 2: AI Sprint Backlogs */}
-        <div className="rounded-3xl p-7 bg-white border border-[#CBB4FF]/60 shadow-xs flex flex-col justify-between hover:border-[#8E7CF6] transition-all">
+        <div className="rounded-3xl p-7 bg-white border border-[#CBB4FF]/60 shadow-xs flex flex-col justify-between hover:border-[#8E7CF6] hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
           <div>
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-[10px] font-mono font-bold px-2.5 py-0.5 rounded-full bg-[#7B3ED6]/10 text-[#7B3ED6]">
+                AGILE ORCHESTRATION
+              </span>
+              <span className="w-2 h-2 rounded-full bg-[#7B3ED6] animate-pulse" />
+            </div>
+
             <h3 className="font-bold text-base text-[#0A0F2B] mb-1">
               No developer plans in a vacuum
             </h3>
@@ -54,7 +68,7 @@ export function AIWorkforceSection() {
             <div className="p-3.5 rounded-xl bg-[#F5F7FE] border border-[#CBB4FF]/50 text-[11px] font-mono text-[#0A0F2B] space-y-1 mb-6">
               <div className="flex items-center justify-between text-[#153EC1] font-bold mb-1">
                 <span>SPRINT 04 // BACKLOG</span>
-                <span>ASSIGNED</span>
+                <span className="text-[#153EC1] font-bold">ASSIGNED</span>
               </div>
               <p className="text-[#535D80]">4 Stories · 18 Story Points</p>
               <p className="text-[#7B3ED6] font-semibold">&gt; Ready for local checkout</p>
@@ -67,8 +81,15 @@ export function AIWorkforceSection() {
         </div>
 
         {/* Card 3: Mobile On-Call & QA Alerts */}
-        <div className="rounded-3xl p-7 bg-white border border-[#CBB4FF]/60 shadow-xs flex flex-col justify-between hover:border-[#8E7CF6] transition-all">
+        <div className="rounded-3xl p-7 bg-white border border-[#CBB4FF]/60 shadow-xs flex flex-col justify-between hover:border-[#8E7CF6] hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
           <div>
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-[10px] font-mono font-bold px-2.5 py-0.5 rounded-full bg-[#2ED2EF]/15 text-[#153EC1]">
+                CHAOS & INCIDENTS
+              </span>
+              <span className="w-2 h-2 rounded-full bg-[#2ED2EF] animate-pulse" />
+            </div>
+
             <h3 className="font-bold text-base text-[#0A0F2B] mb-1">
               Chaos testing & on-call simulations
             </h3>
@@ -80,7 +101,7 @@ export function AIWorkforceSection() {
             <div className="p-3.5 rounded-xl bg-[#F5F7FE] border border-[#CBB4FF]/50 text-[11px] font-mono text-[#0A0F2B] space-y-1 mb-6">
               <div className="flex items-center justify-between text-[#2ED2EF] font-bold mb-1">
                 <span>INCIDENT 01 // STRESS</span>
-                <span>RESOLVED</span>
+                <span className="text-green-500 font-bold">RESOLVED</span>
               </div>
               <p className="text-[#535D80]">Latency spike simulated at 400ms.</p>
               <p className="text-[#153EC1] font-semibold">&gt; Pool recovered successfully</p>
